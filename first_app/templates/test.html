@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>First app page</h1>
+    {% comment %} <h1>{{ d | date:"D d M Y"}}</h1> {% endcomment %}
+    <h1>{{ d| add:"5"}}</h1>
+    <h1>{{'christmas' | capfirst}}</h1>
+    <h1>{{"Python is Fun" | cut:" "}}</h1>
+    <h1>{{d | first}}</h1>
+    <h1>{{d | last}}</h1>
+    <h1>{{d | length}}</h1>
+    <h1>{{'I Am Master Yoda' | lower}}</h1>
+    <h1>{{'Happy coding!' | upper}}</h1>
+    <h1>{{"It's a new day" | title}}</h1>
+    <h1>{{ d | random}}</h1>
+    <h1>{{ d | slice:":2"}}</h1>
+    <h1>{{'Happy coding' | truncatechars:6}}</h1>
+    <h1>{{'Happy coding' | wordcount}}</h1>
+    <h1>{{"Better days ahead!" | truncatewords:2}}</h1>
+    <h1>{{ d| striptags}}</h1>
+    <h1>{{'Earthly' | make_list}}</h1>
+</body>
+</html>
